@@ -16,7 +16,7 @@ struct FAVRPPowerDomainPowerInfo
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
 	float powerInputCapacity;
 };
-UCLASS()
+UCLASS(Abstract)
 /**
  * Megaproject version of Power Storage - changes behaviour based on unlocked schematics
  **/
