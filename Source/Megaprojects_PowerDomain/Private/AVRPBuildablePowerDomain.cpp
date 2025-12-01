@@ -45,6 +45,8 @@ void AAVRPBuildablePowerDomain::BeginFromLevel_Implementation(int level)
 void AAVRPBuildablePowerDomain::OnLevelChanged_Implementation(int level)
 {
 	//Initiate sequence of enabling new phase meshes (will be done in blueprint)
+	//PlayBuildEffectActor(this);
+	//ExecutePlayBuildActorEffects();
 	auto curConfig = storageConfiguration[level];
 	mPowerStoreCapacity = curConfig.powerStoreCapacity;
 	mPowerInputCapacity = curConfig.powerInputCapacity;
