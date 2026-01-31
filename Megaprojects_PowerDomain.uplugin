@@ -2,7 +2,7 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0.0",
-	"FriendlyName": "Megaprojects_PowerDomain",
+	"FriendlyName": "Megaprojects: Power Domain",
 	"Description": "A megaproject resulting in a colossal Power Storage capable of storing up to 1.000.000MW of power",
 	"Category": "Modding",
 	"CreatedBy": "AniViRus Productions",
@@ -34,5 +34,5 @@
 		}
 	],
 	"SemVersion": "1.0.0",
-	"GameVersion": ">=416835"
+	"GameVersion": ">=455399"
 }
