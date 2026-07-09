@@ -157,9 +157,9 @@ ECompassViewDistance AAVRPBuildablePowerDomain::GetActorCompassViewDistance()
 
 void AAVRPBuildablePowerDomain::SetActorCompassViewDistance(ECompassViewDistance compassViewDistance){}
 
-TArray<FLocalUserNetIdBundle> AAVRPBuildablePowerDomain::GetLastEditedBy() const
+FPlayerInfoHandle AAVRPBuildablePowerDomain::GetLastEditedBy() const
 {
-	return TArray<FLocalUserNetIdBundle>();
+	return FPlayerInfoHandle();
 }
 
-void AAVRPBuildablePowerDomain::SetActorLastEditedBy(const TArray<FLocalUserNetIdBundle>& LastEditedBy){}
+void AAVRPBuildablePowerDomain::SetActorLastEditedByHandle(const FPlayerInfoHandle& LastEditedBy){}

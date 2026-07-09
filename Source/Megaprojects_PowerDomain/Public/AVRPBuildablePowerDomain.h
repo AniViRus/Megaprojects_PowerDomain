@@ -52,19 +52,19 @@ public:
 	virtual float GetActorFogOfWarRevealRadius() override;
 	virtual ECompassViewDistance GetActorCompassViewDistance() override;
 	virtual void SetActorCompassViewDistance(ECompassViewDistance compassViewDistance) override;
-	virtual TArray< FLocalUserNetIdBundle > GetLastEditedBy() const override;
-	virtual void SetActorLastEditedBy(const TArray< FLocalUserNetIdBundle >& LastEditedBy) override;
+	virtual FPlayerInfoHandle GetLastEditedBy() const override;
+	virtual void SetActorLastEditedByHandle(const FPlayerInfoHandle& playerInfoHandle) override;
 	//End FGActorRepresentationInterface
 protected:
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
 	TArray<FAVRPPowerDomainPowerInfo> storageConfiguration;
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
-	UMaterialInterface* mRepresentationCompassMaterial;
+	TObjectPtr<UMaterialInterface> mRepresentationCompassMaterial;
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
-	UTexture2D* mRepresentationTexture;
+	TObjectPtr<UTexture2D> mRepresentationTexture;
 	UPROPERTY()
-	TArray<UFGFactoryConnectionComponent*> connections;
+	TArray<TObjectPtr<UFGFactoryConnectionComponent>> connections;
 private:
 	UPROPERTY(Transient)
-	UFGActorRepresentation* cachedRepresentation;
+	TObjectPtr<UFGActorRepresentation> cachedRepresentation;
 };
